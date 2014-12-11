@@ -1,0 +1,332 @@
+/* ==========================================================================
+                                  Sass Mixins
+========================================================================== */
+/* ==========================================================================
+                          Wrapper Style Sheet
+========================================================================== */
+body {
+  background-color: #eee; }
+
+.wrapper {
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  padding: 0;
+  background-color: #fff; }
+  @media (min-width: 768px) {
+    .wrapper {
+      width: 768px; } }
+  @media (min-width: 992px) {
+    .wrapper {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: 1170px; } }
+
+/* ==========================================================================
+                          Header Style Sheet
+========================================================================== */
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #444; }
+  header img {
+    float: left;
+    margin: 7px 0;
+    padding: 0; }
+  header nav {
+    float: left;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; }
+    header nav a {
+      display: block;
+      width: 25%;
+      height: auto;
+      text-align: center;
+      color: #FFF;
+      text-decoration: none;
+      font-size: 16px;
+      float: left;
+      padding: 24px 0;
+      font-weight: bold;
+      -webkit-transition: color .5s, -webkit-transform .5s;
+      /* For Safari 3.1 to 6.0 */
+      transition: color .5s, transform .5s; }
+      header nav a:hover {
+        color: #D74630; }
+  header .navHighlight {
+    width: 100%;
+    height: 4px;
+    background: #D74630;
+    float: left; }
+
+/* ==========================================================================
+                            Main Body Style Sheet
+========================================================================== */
+main {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  padding-bottom: 4px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  display: inline-table; }
+  main .prev {
+    position: absolute;
+    margin: auto auto auto 15px;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff; }
+    @media (min-width: 768px) {
+      main .prev {
+        margin: 350px 0px 350px 25px; } }
+    @media (min-width: 600px) {
+      main .prev {
+        height: 75px;
+        width: 75px; } }
+    @media (min-width: 768px) {
+      main .prev {
+        color: #000; } }
+    @media (min-width: 768px) {
+      main .prev {
+        border: 1px solid #000; } }
+  main .next {
+    position: absolute;
+    margin: auto 15px auto auto;
+    top: 0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    color: #fff;
+    border-radius: 3px;
+    border: 1px solid #fff;
+    right: 0; }
+    @media (min-width: 768px) {
+      main .next {
+        margin: 350px 0px 350px 670px; } }
+    @media (min-width: 992px) {
+      main .next {
+        margin: 350px 0px 350px 875px; } }
+    @media (min-width: 1200px) {
+      main .next {
+        margin: 350px 0px 350px 1070px; } }
+    @media (min-width: 600px) {
+      main .next {
+        height: 75px;
+        width: 75px; } }
+    @media (min-width: 768px) {
+      main .next {
+        color: #000; } }
+    @media (min-width: 768px) {
+      main .next {
+        border: 1px solid #000; } }
+    @media (min-width: 768px) {
+      main .next {
+        right: initial; } }
+  @media (min-width: 600px) {
+    main .larger {
+      display: inline-block; } }
+  main .smaller {
+    display: inline-block; }
+    @media (min-width: 600px) {
+      main .smaller {
+        display: none; } }
+  main .contacth1 {
+    padding: 10px;
+    margin-bottom: 0; }
+    @media (min-width: 500px) {
+      main .contacth1 {
+        padding: 30px; } }
+  main .contactp {
+    padding: 0px 10px;
+    margin: 0; }
+    @media (min-width: 500px) {
+      main .contactp {
+        padding: 0 30px; } }
+  main form {
+    padding: 10px;
+    text-align: center; }
+    @media (min-width: 500px) {
+      main form {
+        padding: 30px;
+        text-align: initial; } }
+    main form input {
+      margin-bottom: 20px; }
+    main form #name {
+      margin-left: 0;
+      width: 100%; }
+      @media (min-width: 500px) {
+        main form #name {
+          width: 300px;
+          margin-left: 30px; } }
+    main form #email {
+      margin-left: 0;
+      width: 100%; }
+      @media (min-width: 500px) {
+        main form #email {
+          width: 300px;
+          margin-left: 7px; } }
+    main form textarea {
+      margin-left: 0;
+      width: 100%;
+      height: 150px; }
+      @media (min-width: 500px) {
+        main form textarea {
+          width: 300px;
+          margin-left: 45px; } }
+    main form #submit {
+      background: #fff;
+      border: 1px solid #000;
+      border-radius: 26px;
+      width: 100px;
+      height: 30px;
+      -webkit-transition: color .5s, background .5s, -webkit-transform .5s;
+      /* For Safari 3.1 to 6.0 */
+      transition: color .5s, background .5s, transform .5s; }
+      main form #submit:hover {
+        background: #333;
+        color: #fff; }
+
+.carousel {
+  list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #fff; }
+  @media (min-width: 768px) {
+    .carousel {
+      height: 512px; } }
+  @media (min-width: 992px) {
+    .carousel {
+      height: 647px; } }
+  @media (min-width: 1200px) {
+    .carousel {
+      height: 700px; } }
+  .carousel li {
+    text-align: center; }
+    .carousel li img {
+      top: 20px;
+      left: 40px;
+      max-width: 100%;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        .carousel li img {
+          max-width: 768px;
+          max-height: 512px; } }
+      @media (min-width: 992px) {
+        .carousel li img {
+          max-width: 970px;
+          max-height: 647px; } }
+      @media (min-width: 1200px) {
+        .carousel li img {
+          max-width: 1020px;
+          max-height: 700px; } }
+
+.carouselNav {
+  list-style: none;
+  padding: 0px;
+  margin-top: -45px;
+  text-align: center; }
+  .carouselNav li {
+    display: inline-block;
+    border-radius: 10px;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    border: 2px solid #000;
+    background: #fff;
+    cursor: pointer; }
+    .carouselNav li.active {
+      background: #000; }
+
+.portfolioList {
+  padding: 10px;
+  margin: 0; }
+  @media (min-width: 992px) {
+    .portfolioList {
+      padding: 20px; } }
+  @media (min-width: 1200px) {
+    .portfolioList {
+      padding: 40px; } }
+  .portfolioList .spacer {
+    padding: 5px; }
+    @media (min-width: 992px) {
+      .portfolioList .spacer {
+        padding: 10px; } }
+    @media (min-width: 1200px) {
+      .portfolioList .spacer {
+        padding: 20px; } }
+  .portfolioList .vertical {
+    list-style-type: none;
+    width: 100%;
+    display: inline-block;
+    float: left; }
+    @media (min-width: 500px) {
+      .portfolioList .vertical {
+        width: 50%; } }
+    @media (min-width: 768px) {
+      .portfolioList .vertical {
+        width: 33%; } }
+    .portfolioList .vertical img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block; }
+  .portfolioList .horizontal {
+    list-style-type: none;
+    width: 100%;
+    display: inline-block;
+    float: left; }
+    @media (min-width: 768px) {
+      .portfolioList .horizontal {
+        width: 66%; } }
+    .portfolioList .horizontal img {
+      max-width: 100%;
+      height: auto;
+      display: inline-block; }
+  .portfolioList .imgDescription {
+    margin: 0;
+    font-weight: bold;
+    color: white;
+    margin-top: -30px; }
+    .portfolioList .imgDescription p {
+      position: relative;
+      margin: 0;
+      height: 25px;
+      padding: 5px 0 0 5px;
+      background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 100%);
+      background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0, 0, 0, 0.5)), color-stop(100%, rgba(0, 0, 0, 0.5)));
+      background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 100%);
+      background: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 100%);
+      background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 100%);
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 100%); }
+  .portfolioList li:nth-child(1) {
+    float: left; }
+    @media (min-width: 768px) {
+      .portfolioList li:nth-child(1) {
+        float: right; } }
+  .portfolioList li:nth-child(4) {
+    float: right; }
+  .portfolioList li:nth-child(6) {
+    float: right; }
+
+/* ==========================================================================
+                              Footer Style Sheet
+========================================================================== */
+footer {
+  background: #333;
+  clear: both; }
+  footer p {
+    margin: 0;
+    padding: 25px;
+    color: #fff; }
+
+/*# sourceMappingURL=application.css.map */
